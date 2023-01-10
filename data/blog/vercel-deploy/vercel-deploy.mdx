@@ -4,7 +4,7 @@ date: 2023-01-09T19:00:00Z
 lastmod: '2021-02-01'
 tags: ['next-js', 'github', 'vercel']
 draft: false
-summary: 'Deploy Next.js application to Vercel using GitHub Actions'
+summary: 'Deploying an example Next.js application to Vercel using GitHub Actions'
 layout: PostSimple
 ---
 
@@ -19,7 +19,13 @@ figured it would be easy to disconnect Vercel's GitHub connection
 and strictly use the CLI to deploy through Actions.  After some time of fighting, we 
 were able to configure it how we wanted, but the fidgeting took longer than I thought it would, so I figured I'd share...
 
-## Configure codebase
+## Codebase
+
+This post assumes you already have an initialized Next.js application; this specific example will have the project
+at the root of the repository (and not within `/app`).  The example I used also has tests that can be run with `npm test`.
+To see this repository, it's on GitHub [here](https://github.com/satherw/nextjs-github-actions-vercel).
+
+## Configure workflow
 
 First, here is the GitHub action workflow that we used
 
@@ -77,6 +83,16 @@ jobs:
 
 The primary code of importance here is the final `deploy` job, which comes almost directly off the guide
 Vercel wrote.  If you need more help, GitHub Actions [documentation](https://docs.github.com/en/actions) is quite thorough.
+
+These steps under the `deploy` job are pretty straightforward, it
+1. checks out the repository
+2. pulls the Vercel environment info
+3. builds the Next.js application _(using the aforementioned env info)_
+4. deploys the built application to vercel production environment
+
+The only thing worth noting here is that the `--prebuilt` parameter is only needed when the `vercel build` command is being used prior to the deploy.
+It is possible to build the application during the `vercel deploy` in which the parameter would not be needed.  We found it easier to read
+and debug in our example if we had them as two different steps.
 
 ## Secrets
 
@@ -137,8 +153,8 @@ in your workflow.  Most of our problems arose from missing Vercel Next.js comman
 the returned values made it easier to debug.
 
 ```yaml
-      - name: Print out Vercel config
-        run: pwd && ls -la && cat .vercel/.env.production.local && cat .vercel/project.json
+- name: Print out Vercel config
+run: pwd && ls -la && cat .vercel/.env.production.local && cat .vercel/project.json
 ```
 
 If this is a problem, inside the Vercel project settings, you can override the **Build & Development Settings**
