@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Will Sather</title>
+      <link>https://blog.sather.ws/blog</link>
+      <description>stuff i want to write about</description>
+      <language>en-us</language>
+      <managingEditor>undefined (Will Sather)</managingEditor>
+      <webMaster>undefined (Will Sather)</webMaster>
+      <lastBuildDate>Mon, 09 Jan 2023 19:00:00 GMT</lastBuildDate>
+      <atom:link href="https://blog.sather.ws/tags/github/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://blog.sather.ws/blog/vercel-deploy/vercel-deploy</guid>
+    <title>Deploy Next.js app to Vercel using GitHub Actions</title>
+    <link>https://blog.sather.ws/blog/vercel-deploy/vercel-deploy</link>
+    <description>Deploy Next.js application to Vercel using GitHub Actions</description>
+    <pubDate>Mon, 09 Jan 2023 19:00:00 GMT</pubDate>
+    <author>undefined (Will Sather)</author>
+    <category>next-js</category><category>github</category><category>vercel</category>
+  </item>
+
+    </channel>
+  </rss>
