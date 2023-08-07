@@ -12,6 +12,7 @@ const siteMetadata = {
   github: "https://github.com/willsather",
   instagram: "https://www.instagram.com/will.sather/",
   linkedin: "https://www.linkedin.com/in/willsather",
+  vsco: "https://vsco.co/willsather/gallery",
   locale: "en-US",
 }
 

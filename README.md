@@ -1,6 +1,7 @@
 # Blog
 
-This is a static blog site that is powered by Next.js, styled with Tailwind.css, and deployed on Netlify.  It's main content source is .mdx files written and published in
+This is a static blog site that is powered by Next.js, styled with Tailwind.css, and deployed on Netlify. It's main
+content source is .mdx files written and published in
 the `/data` directory.
 
 It's accessible on my domain at [Blog](https://blog.sather.ws)

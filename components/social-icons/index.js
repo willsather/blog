@@ -1,11 +1,13 @@
 import Github from "./github.svg"
 import Linkedin from "./linkedin.svg"
 import Instagram from "./instagram.svg"
+import VSCO from "./vsco.svg"
 
 const components = {
   instagram: Instagram,
   github: Github,
   linkedin: Linkedin,
+  vsco: VSCO,
 }
 
 const SocialIcon = ({ kind, href, size = 24 }) => {

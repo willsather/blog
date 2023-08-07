@@ -7,9 +7,10 @@ export default function Footer() {
     <footer>
       <div className="mt-16 flex flex-col items-center">
         <div className="mb-3 flex space-x-4">
+          <SocialIcon kind="instagram" href={siteMetadata.instagram} size="6" />
           <SocialIcon kind="github" href={siteMetadata.github} size="6" />
           <SocialIcon kind="linkedin" href={siteMetadata.linkedin} size="6" />
-          <SocialIcon kind="instagram" href={siteMetadata.instagram} size="6" />
+          <SocialIcon kind="vsco" href={siteMetadata.vsco} size="6" />
         </div>
         <div className="mb-10 flex space-x-2 text-sm text-gray-500 dark:text-gray-400">
           <div>{`© ${new Date().getFullYear()}`}</div>
