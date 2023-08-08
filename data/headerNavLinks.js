@@ -1,6 +1,7 @@
 const headerNavLinks = [
   { href: "https://sather.ws", title: "home" },
-  { href: "/blog", title: "blog" },
+  { href: "/", title: "blog" },
+  { href: "/posts", title: "posts" },
   { href: "/tags", title: "tags" },
   { href: "https://sather.ws/about", title: "about" },
 ]

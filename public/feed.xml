@@ -7,13 +7,23 @@
       <language>en-us</language>
       <managingEditor>undefined (Will Sather)</managingEditor>
       <webMaster>undefined (Will Sather)</webMaster>
-      <lastBuildDate>Mon, 09 Jan 2023 19:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 07 Aug 2023 19:00:00 GMT</lastBuildDate>
       <atom:link href="https://blog.sather.ws/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://blog.sather.ws/blog/vercel-deploy/vercel-deploy</guid>
+    <guid>https://blog.sather.ws/blog/netlify-deploy</guid>
+    <title>Deploy Next.js app to Netlify using GitHub Actions</title>
+    <link>https://blog.sather.ws/blog/netlify-deploy</link>
+    <description>Deploying a Next.js App Router application to Netlify using GitHub Actions</description>
+    <pubDate>Mon, 07 Aug 2023 19:00:00 GMT</pubDate>
+    <author>undefined (Will Sather)</author>
+    <category>next-js</category><category>github</category><category>netlify</category>
+  </item>
+
+  <item>
+    <guid>https://blog.sather.ws/blog/vercel-deploy</guid>
     <title>Deploy Next.js app to Vercel using GitHub Actions</title>
-    <link>https://blog.sather.ws/blog/vercel-deploy/vercel-deploy</link>
+    <link>https://blog.sather.ws/blog/vercel-deploy</link>
     <description>Deploying an example Next.js application to Vercel using GitHub Actions</description>
     <pubDate>Mon, 09 Jan 2023 19:00:00 GMT</pubDate>
     <author>undefined (Will Sather)</author>

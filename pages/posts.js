@@ -14,14 +14,14 @@ export async function getStaticProps() {
   return { props: { initialDisplayPosts, posts, pagination } }
 }
 
-export default function Blog({ posts, initialDisplayPosts, pagination }) {
+export default function Posts({ posts, initialDisplayPosts, pagination }) {
   return (
     <>
       <ListLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="All Posts"
+        title="posts"
       />
     </>
   )
